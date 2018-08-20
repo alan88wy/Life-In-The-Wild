@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  /* transition: all 1s ease-in-out; */
+  /* No need to use transition property if we do the above
+  transition: [property] [duration] [timing-function] [delay];
+  transition-property: all;
+  transition-property: transform; */
+  /* transition: transform 1x; */
+  transform-origin: left top;
+  transition: transform 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
+  /* transform: rotate(360deg); */
+  /* transform: translate(20px, 20px); */
+  /* transform: skewX(25deg);
+  transform: skewY(10deg); */
+  /* transform: skew(25deg, 10deg); */
+  /* transform: rotate(720deg); */
+  /* Can do Combined transform */
+  /* transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%); */
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  width: 400px;
+  box-shadow: 5px 5px grey;
+  margin-top: 10px;
+}
